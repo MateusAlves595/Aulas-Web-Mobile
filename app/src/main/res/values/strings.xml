@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LoginScreen</string>
+    <string name="login">Login</string>
+    <string name="subtitle">Please sign in to continue.</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="signIn">Sign in</string>
+    <string name="dontHave">Don’t have an account?</string>
+    <string name="signUp">Sign up</string>
+    <string name="signUpTitle">Sign Up</string>
+    <string name="createNewAccount">Create a new Account</string>
+    <string name="username">Username</string>
+    <string name="phone">Phone</string>
+    <string name="over18">Over 18?</string>
+    <string name="buttonCreate">Create Account</string>
+    <string name="alreadyHave">Already have an account?</string>
+</resources>

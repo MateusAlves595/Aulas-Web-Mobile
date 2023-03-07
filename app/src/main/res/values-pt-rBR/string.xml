@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TelaLogin</string>
+    <string name="login">Login</string>
+    <string name="subtitle">Por favor entre para continuar.</string>
+    <string name="email">E-mail</string>
+    <string name="password">Senha</string>
+    <string name="signIn">Sign in</string>
+    <string name="dontHave">Não tem uma conta?</string>
+    <string name="signUp">Sign up</string>
+    <string name="signUpTitle">Sign Up</string>
+    <string name="createNewAccount">Crie uma nova conta</string>
+    <string name="username">Usuário</string>
+    <string name="phone">Telefone</string>
+    <string name="over18">Maior de 18?</string>
+    <string name="buttonCreate">Criar conta</string>
+    <string name="alreadyHave">Já tem uma conta?</string>
+</resources>
