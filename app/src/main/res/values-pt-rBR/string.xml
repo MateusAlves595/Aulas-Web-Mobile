@@ -14,4 +14,9 @@
     <string name="over18">Maior de 18?</string>
     <string name="buttonCreate">Criar conta</string>
     <string name="alreadyHave">Já tem uma conta?</string>
+    <string name="title_activity_tela02">Tela02</string>
+    <string name="title_activity_tela03">Tela03</string>
+    <string name="youAreParis">Você está em Paris</string>
+    <string name="myTrips">Minhas Viagens</string>
+    <string name="categories">Categorias</string>
 </resources>

@@ -10,9 +10,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -69,10 +71,10 @@ fun LoginScreen() {
                 )
                 Text(
                     stringResource(id = R.string.subtitle),
-                    fontSize = 10.sp,
+                    fontSize = 15.sp,
                     color = Color.Gray,
                     letterSpacing = 1.sp,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Light
                 )
             }
             Column(
@@ -113,8 +115,61 @@ fun LoginScreen() {
                     }
                 )
             }
+            Column (
+                modifier = Modifier
+                    .padding(20.dp)
+                    .fillMaxWidth(),
+                horizontalAlignment = Alignment.End
+            ){
+                Button(onClick = { /*TODO*/ },
+                colors = ButtonDefaults.buttonColors(colorResource(id = R.color.rosa)),
+                    modifier = Modifier
+                        .width(134.dp)
+                        .height(48.dp),
+                    shape = RoundedCornerShape(15.dp),
+                )
+                {
+                    Text(
+                        stringResource(id = R.string.signIn).uppercase(),
+                        color = Color.White,
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 20.sp
+                    )
+                    Icon(painter = painterResource(id = R.drawable.baseline_arrow_forward_24),
+                        contentDescription = null,
+                    modifier = Modifier.size(30.dp),
+                    tint = Color.White)
+                }
 
+                Spacer(
+                    modifier = Modifier.height(15.dp)
+                )
+
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth(),
+                    horizontalArrangement = Arrangement.End
+                ) {
+                    Text(
+                        text = stringResource(id = R.string.dontHave),
+                        color = Color.Gray,
+                        letterSpacing = 1.sp,
+                        fontWeight = FontWeight.Light,
+                        fontSize = 15.sp
+                    )
+                    Spacer(modifier = Modifier.width(3.dp))
+                    Text(
+                        text = stringResource(id = R.string.signUp),
+                        color = colorResource(id = R.color.rosa),
+                        letterSpacing = 1.sp,
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 15.sp
+                    )
+                }
+            }
         }
+
+
         Row(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.Bottom
